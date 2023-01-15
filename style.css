@@ -1,0 +1,59 @@
+
+
+.main_content{
+    background-color: #e7c669;
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    position: absolute;
+    top: 20%;
+    bottom: 10%;
+    left: 42%;
+
+    
+    margin: -50px 0 0 -50px;
+    
+    border-radius: 12%;
+    display: grid;
+    grid-template-rows: 4fr 1fr 1fr 1.5fr;
+}
+
+.top_part{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+}
+.pic_block{
+    display: grid;
+    grid-template-rows: 1fr 14fr 1fr ;
+}
+.pic_profile{
+    height: 140px;
+    object-position: center;
+    object-fit: cover;
+}
+
+.mid_part{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    column-gap: 5%;
+    font-size: small;
+    
+}
+.matching_point{
+    background-color: aliceblue;
+}
+.bot_part{
+    font-size: medium;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.like_button{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: auto;
+    
+}
