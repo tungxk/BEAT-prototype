@@ -8,44 +8,56 @@
         <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
           <link rel="stylesheet" href="chatbox/chatbox.css">
       </head>
-      <body style="background-color: #DD5353;">
-     
-          <div class="main_content">
-            <div class="top_part">
-              <div></div>
-              <div class="pic_block">
-                <div></div>
-                <img class="pic_profile" src="a_girl_pic.jpg">
-                <div></div>
+      <body>
+        <header id="showcase">
+          <button class="like_button" type="button"><i class='bx bxs-like'></i></button>
+          <button class="dislike_button" type="button"><i class='bx bxs-dislike'></i></button>
+          
+        </header>
+           
+        <div class="chatbox-wrapper">
+          <div class="chatbox-toggle">
+            <i class='bx bxs-message-rounded-dots'></i>
+          </div>
+          <div class="chatbox-message-wrapper">
+            <div class="chatbox-message-header">
+              <div class="chatbox-message-profile">
+                <img src="a_girl_pic.jpg" alt="" class="chatbox-message-image">
+                <div>
+                  <h4 class="chatbox-message-name">Jessica</h4>
+                  <p class="chatbox-message-status">Matched 3 hours ago</p>
+                </div>
               </div>
-              <div></div>
-            </div>
-            <div class="mid_part">
-              <div>
-                <div>Jessica - 19</div>
-                <div> She/her</div>
-                <div> Professional Communication</div>
-                <div> RMIT Hanoi Campus</div>
+              <div class="chatbox-message-dropdown">
+                <i class='bx bx-dots-vertical-rounded chatbox-message-dropdown-toggle'></i>
+                          
+                <ul class="chatbox-message-dropdown-menu">
+                  <li>
+                    <a href="#">Profile</a>
+                  </li>
+                  <li>
+                    <a href="#">Report</a>
+                  </li>
+                              <li>
+                    <a href="#">Block</a>
+                  </li>
+                </ul>
               </div>
-              <div class="matching_point">
-                85
-              </div>
             </div>
-            <div class="bot_part">
-                <div>Bio</div>
-                <div>----------</div>
-                <div>----------</div>
+            <div class="chatbox-message-content">
+              <h4 class="chatbox-message-no-message">Gonna wait till she texts first?</h4>
             </div>
-            <div class="like_button">
-              <div></div>
-              <button>dis</button>
-              <div></div>
-              <button>like</button>
-              <div></div>
+            <div class="chatbox-message-bottom">
+              <form action="#" class="chatbox-message-form">
+                <textarea rows="1" placeholder="Type message..." class="chatbox-message-input"></textarea>
+                <button type="submit" class="chatbox-message-submit"><i class='bx bx-send' ></i></button>
+              </form>
             </div>
-
-          </div>  
-        
+          </div>
+        </div>
+    
+        <script src="chatbox/chatbox.js"></script>
+        <script src="chatbox/chatbox_text_time.js"></script>
 
       </body>
 </html>
